@@ -26,6 +26,8 @@ a:hover {
 	text-decoration: underline;
 }
 body {
+	border-bottom-color: #323232;
+	border-right: #323232;
 	font-family: Arial, sans-serif;
 	background-color: #000;
 	color: #e1e1e1;
@@ -41,12 +43,52 @@ body {
 	scrollbar-face-color: #000;
 	scrollbar-shadow-color: #999;
 	scrollbar-highlight-color: #999;
+	border-left-color: #323232;
+	border-right-color: #323232;
+	border-top-color: #323232;
+	outline-color: #323232;
 }
 table {
-	border: 1px #323232;
+	border: thin #e1e1e1 solid;
+	border-bottom-color: #e1e1e1;
+	border-left-color: #e1e1e1;
+	border-right-color: #e1e1e1;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-right-style: solid;
+	border-right-width: thin;
+	border-top-width: thin;
+	border-top-color: #e1e1e1;
+	border-top-style: solid;
 	font-family: Arial, sans-serif;
 	font-size: 10pt;
-	color: #fff;
+	line-height: inherit;
+	outline: #323232 solid thin;
+	outline-color: #323232;
+	outline-style: solid;
+	outline-width: thin;
+	table-layout: auto;
+	border-spacing: inherit;
+	margin: auto auto auto auto;
+	color: #e1e1e1;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	padding-bottom: inherit;
+	padding-left: inherit;
+	padding-right: inherit;
+	padding-top: inherit;
+	clear: inherit;
+	clip: inherit;
+	background-attachment: inherit;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: none;
 }
 /* =========================
    Logo

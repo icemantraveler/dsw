@@ -1,99 +1,71 @@
-﻿a:link {
-	color: #c0c0c0;
+﻿/* =========================
+   Links
+   ========================= */
+a {
 	font-family: Arial, sans-serif;
 	font-size: 10pt;
 	font-weight: bold;
+	color: #c0c0c0;
 	text-decoration: none;
 	text-shadow: 2px 2px 5px #555;
 }
 a:visited {
 	color: #c0c0c0;
-	font-family: Arial, sans-serif;
-	font-size: 10pt;
-	font-weight: bold;
-}
-a:active {
-	color: #333;
-	font-family: Arial, sans-serif;
-	font-size: 10pt;
-	font-weight: bold;
 }
 a:hover {
 	color: #fff;
-	font-family: Arial, sans-serif;
-	font-size: 10pt;
-	font-weight: bold;
 	text-decoration: underline;
 }
-body {
-	border-bottom-color: #323232;
-	border-right: #323232;
-	font-family: Arial, sans-serif;
-	background-color: #000;
-	color: #e1e1e1;
-	font-size: 10pt;
-	background-image: url('bgplating.jpg');
-	background-position: center center;
-	background-repeat: repeat;
-	background-attachment: fixed;
-	scrollbar-arrow-color: #999;
-	scrollbar-base-color: #000;
-	scrollbar-dark-shadow-color: #999;
-	scrollbar-track-color: #000;
-	scrollbar-face-color: #000;
-	scrollbar-shadow-color: #999;
-	scrollbar-highlight-color: #999;
-	border-left-color: #323232;
-	border-right-color: #323232;
-	border-top-color: #323232;
-	outline-color: #323232;
+a:active {
+	color: #333;
 }
-table {
-	border: thin #e1e1e1 solid;
-	border-bottom-color: #e1e1e1;
-	border-left-color: #e1e1e1;
-	border-right-color: #e1e1e1;
-	border-left-style: solid;
-	border-bottom-style: solid;
-	border-bottom-width: thin;
-	border-left-width: thin;
-	border-right-style: solid;
-	border-right-width: thin;
-	border-top-width: thin;
-	border-top-color: #e1e1e1;
-	border-top-style: solid;
+/* =========================
+   Page
+   ========================= */
+html {
+	/* Firefox scrollbar */
+    scrollbar-width: thick;
+	scrollbar-color: #999 #000;
+}
+body {
 	font-family: Arial, sans-serif;
 	font-size: 10pt;
-	line-height: inherit;
-	outline: #323232 solid thin;
-	outline-color: #323232;
-	outline-style: solid;
-	outline-width: thin;
-	table-layout: auto;
-	border-spacing: inherit;
-	margin: auto auto auto auto;
 	color: #e1e1e1;
-	margin-bottom: auto;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: auto;
-	padding-bottom: inherit;
-	padding-left: inherit;
-	padding-right: inherit;
-	padding-top: inherit;
-	clear: inherit;
-	clip: inherit;
-	background-attachment: inherit;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: normal;
-	text-decoration: none;
-	text-transform: none;
+	background: #000 url("bgplating.jpg") center center repeat fixed;
+}
+/* =========================
+   Chrome / Edge / Safari Scrollbars
+   ========================= */
+::-webkit-scrollbar {
+	width: 12px;
+}
+::-webkit-scrollbar-track {
+	background: #000;
+}
+::-webkit-scrollbar-thumb {
+	background: #999;
+	border: 2px solid #000;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #c0c0c0;
+}
+/* =========================
+   Tables
+   ========================= */
+table {
+	margin: auto;
+	border: 1px solid #323232;
+	outline: 1px solid #323232;
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	color: #e1e1e1;
 }
 /* =========================
    Logo
    ========================= */
 .logo {
+	display: block;
 	margin: 0 auto;
 	max-width: 90%;
 	height: auto;
@@ -102,17 +74,14 @@ table {
    Horizontal Rules
    ========================= */
 hr {
-	border-style: none;
-	border-color: inherit;
-	border-width: medium;
 	border: 0;
 	height: 2px;
-	margin: 2px 0 0px 0;
+	margin: 2px 0;
 }
 hr.main {
-	background: linear-gradient(to right, #3A3A3A, #D0D0D0, #3A3A3A);
+	background: linear-gradient(to right, #3a3a3a, #d0d0d0, #3a3a3a);
 }
 hr.sub {
-	background: linear-gradient(to right, #1A1A1A, #777777, #1A1A1A);
+	background: linear-gradient(to right, #1a1a1a, #777, #1a1a1a);
 	opacity: 0.75;
 }
